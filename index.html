@@ -82,7 +82,47 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='malle_image'>
+                      <img src='images/metric-bias.png' width="190">
+                    </div>
+                    <img src='images/metric-bias.png' width="190">
+                  </div>
+                  <script type="text/javascript">
+                    function malle_start() {
+                      document.getElementById('malle_image').style.opacity = "1";
+                    }
 
+                    function malle_stop() {
+                      document.getElementById('malle_image').style.opacity = "0";
+                    }
+                    malle_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:70%;vertical-align:top">
+                  <a href="https://aclanthology.org/2022.naacl-main.240/">
+                    <papertitle>BERTScore is Unfair: On Social Bias in Language Model-Based Metrics for Text Generation
+                    </papertitle>
+                  </a>
+                  <br>
+                  Tianxiang Sun*, <strong>Junliang He*</strong>, Xipeng Qiu, Xuanjing Huang
+                  <br>
+                  <em>EMNLP</em>, 2022 &nbsp <font color="red"></font>
+                  <br>
+                  <a href="https://arxiv.org/pdf/2210.07626.pdf">pdf</a>
+                  /
+                  <a href="https://github.com/txsun1997/Metric-Fairness">code</a>
+                  /
+
+                  <p></p>
+                  <p>
+                    We demonstrate that popular PLM-based metrics exhibit significantly higher social bias than
+                    traditional metrics. In addition, we develop debiasing adapters mitigating bias in PLM-based metrics
+                    while retaining high performance for evaluating text generation.
+                </td>
+              </tr>
 
 
 
@@ -128,47 +168,7 @@
                   </p>
                 </td>
               </tr>
-              <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-                <td style="padding:20px;width:30%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='malle_image'>
-                      <img src='images/metric-bias.png' width="190">
-                    </div>
-                    <img src='images/metric-bias.png' width="190">
-                  </div>
-                  <script type="text/javascript">
-                    function malle_start() {
-                      document.getElementById('malle_image').style.opacity = "1";
-                    }
-
-                    function malle_stop() {
-                      document.getElementById('malle_image').style.opacity = "0";
-                    }
-                    malle_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:70%;vertical-align:top">
-                  <a href="https://aclanthology.org/2022.naacl-main.240/">
-                    <papertitle>BERTScore is Unfair: On Social Bias in Language Model-Based Metrics for Text Generation
-                    </papertitle>
-                  </a>
-                  <br>
-                  Tianxiang Sun*, <strong>Junliang He*</strong>, Xipeng Qiu, Xuanjing Huang
-                  <br>
-                  <em>EMNLP</em>, 2022 &nbsp <font color="red"></font>
-                  <br>
-                  <a href="https://arxiv.org/pdf/2210.07626.pdf">pdf</a>
-                  /
-                  <a href="https://github.com/txsun1997/Metric-Fairness">code</a>
-                  /
-
-                  <p></p>
-                  <p>
-                    We demonstrate that popular PLM-based metrics exhibit significantly higher social bias than
-                    traditional metrics. In addition, we develop debiasing adapters mitigating bias in PLM-based metrics
-                    while retaining high performance for evaluating text generation.
-                </td>
-              </tr>
+              
 
 
 
