@@ -41,12 +41,13 @@
                     <!-- <name>Tianxiang Sun <span style="color:black;font-size:22pt;font-family:STFangSong"><b>(孙天祥)</b></span><br/></name> -->
                   </p>
                   <p>I am a 1st-year M.S. student at the <a href="https://nlp.fudan.edu.cn/">NLP Group</a> at <a
-                      href="https://www.fudan.edu.cn/en/">Fudan University</a>. Before that, I received my B.Eng. from <a href="http://english.cqu.edu.cn">Chongqing
+                      href="https://www.fudan.edu.cn/en/">Fudan University</a>. Before that, I received my B.Eng. from
+                    <a href="http://english.cqu.edu.cn">Chongqing
                       University</a> in 2022.
                   </p>
-                  
+
                   <p style="text-align:center">
-                    
+
                     <a href="https://scholar.google.com/citations?user=KhHpD54AAAAJ&hl=zh-CN">Google Scholar</a>
                     &nbsp/&nbsp
                     <a href="https://github.com/jlhe2000">Github</a> &nbsp/&nbsp
@@ -68,10 +69,10 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>News</heading>
                   <ul>
-                      <li> <b>[Nov. 2022]</b> My first paper is accepted to EMNLP 2022!</li>
-                      <li> <b>[Sep. 2022]</b> I joined the NLP Group at Fudan University as a M.S. student.</li>
-                      <li> <b>[Jun. 2022]</b> I received B.Eng. from College of Computer Science, Chongqing
-                        University. GPA: 3.93/4.0 (top 0.1%)</li>
+                    <li> <b>[Nov. 2022]</b> My first paper is accepted to EMNLP 2022!</li>
+                    <li> <b>[Sep. 2022]</b> I joined the NLP Group at Fudan University as a M.S. student.</li>
+                    <li> <b>[Jun. 2022]</b> I received B.Eng. from College of Computer Science, Chongqing
+                      University. GPA: 3.93/4.0 (top 0.1%)</li>
                     </div>
                   </ul>
                 </td>
@@ -81,9 +82,9 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-              
 
-            
+
+
 
               <tr onmouseout="malle_stop()" onmouseover="malle_start()">
                 <td style="padding:20px;width:30%;vertical-align:middle">
@@ -127,12 +128,53 @@
                   </p>
                 </td>
               </tr>
+              <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='malle_image'>
+                      <img src='images/metric-bias.png' width="190">
+                    </div>
+                    <img src='images/metric-bias.png' width="190">
+                  </div>
+                  <script type="text/javascript">
+                    function malle_start() {
+                      document.getElementById('malle_image').style.opacity = "1";
+                    }
 
-              
+                    function malle_stop() {
+                      document.getElementById('malle_image').style.opacity = "0";
+                    }
+                    malle_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:70%;vertical-align:top">
+                  <a href="https://aclanthology.org/2022.naacl-main.240/">
+                    <papertitle>BERTScore is Unfair: On Social Bias in Language Model-Based Metrics for Text Generation
+                    </papertitle>
+                  </a>
+                  <br>
+                  Tianxiang Sun*, <strong>Junliang He*</strong>, Xipeng Qiu, Xuanjing Huang
+                  <br>
+                  <em>EMNLP</em>, 2022 &nbsp <font color="red"></font>
+                  <br>
+                  <a href="https://arxiv.org/pdf/2210.07626.pdf">pdf</a>
+                  /
+                  <a href="https://github.com/txsun1997/Metric-Fairness">code</a>
+                  /
 
-              
+                  <p></p>
+                  <p>
+                    We demonstrate that popular PLM-based metrics exhibit significantly higher social bias than
+                    traditional metrics. In addition, we develop debiasing adapters mitigating bias in PLM-based metrics
+                    while retaining high performance for evaluating text generation.
+                </td>
+              </tr>
 
-              
+
+
+
+
+
 
             </tbody>
           </table>
